@@ -16,14 +16,7 @@ permissions:
 
 jobs:
 
-  translations:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-      with:
-        fetch-depth: 1
-    - name: Install xmllint
-      run: apt-get install libxml2-utils
+  
   build:
 
     runs-on: ubuntu-latest
